@@ -9,7 +9,6 @@ public class ResourceSO : ScriptableObject
     public int CurrentResource {get => _currentResource; private set{_currentResource = value; OnResourceChange?.Invoke(CurrentResource);}}
 
     [SerializeField] int _staringResource;
-    [SerializeField] bool _dontResetOnLoad;
 
     private int _currentResource;
 
@@ -25,6 +24,5 @@ public class ResourceSO : ScriptableObject
     private void ResetResource(Scene _, Scene _2) => CurrentResource = _staringResource;
 
     private void OnEnable() => SceneManager.activeSceneChanged += ResetResource;
-
     private void OnDisable() => SceneManager.activeSceneChanged -= ResetResource;
 }
