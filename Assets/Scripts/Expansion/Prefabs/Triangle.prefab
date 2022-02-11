@@ -129,4 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _size: 10
+  _resource: {fileID: 11400000, guid: 371812da9ba4f4c4cb0cc78294857f25, type: 2}
   _sizeDelta: -1
+  _energyConsumedOnUse: 1

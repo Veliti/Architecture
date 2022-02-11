@@ -208,10 +208,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5510257041870348870, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
-      propertyPath: _input
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5510257041870348871, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -256,49 +252,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5510257041870348872, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
-      propertyPath: OnResourceChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 854393744}
-    - target: {fileID: 5510257041870348872, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
-      propertyPath: OnResourceChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateUI
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
---- !u!1 &761721625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5510257041870348869, guid: 18115d28224a83344b0c4cc50968979a, type: 3}
-  m_PrefabInstance: {fileID: 761721624}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &761721626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761721625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd3aaf4a4a1daf941816fec9d134893a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnResourceChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1880186115}
-        m_TargetAssemblyTypeName: ResourceUI, Assembly-CSharp
-        m_MethodName: UpdateUI
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _startingEnergy: 3
 --- !u!1 &796127725
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +390,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2896626179730777247, guid: 73658910ccc3f5f4d8618d56741cab40, type: 3}
+      propertyPath: _resource
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a196b19c1f26a847838fc3416d9305d, type: 2}
     - target: {fileID: 2896626180039851715, guid: 73658910ccc3f5f4d8618d56741cab40, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -525,17 +484,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73658910ccc3f5f4d8618d56741cab40, type: 3}
---- !u!114 &854393744 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2896626179730777247, guid: 73658910ccc3f5f4d8618d56741cab40, type: 3}
-  m_PrefabInstance: {fileID: 854393743}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05c115e4326981488b96a7718287ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &854393745 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2896626179119863790, guid: 73658910ccc3f5f4d8618d56741cab40, type: 3}
@@ -837,6 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05c115e4326981488b96a7718287ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _resource: {fileID: 11400000, guid: 371812da9ba4f4c4cb0cc78294857f25, type: 2}
   _resourceText: 'Energy:'
 --- !u!114 &1880186116
 MonoBehaviour:

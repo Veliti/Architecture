@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5510257041870348871}
   - component: {fileID: 2223049741091763281}
   - component: {fileID: 5510257041870348870}
-  - component: {fileID: 5510257041870348872}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -57,30 +56,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbe1693e8929f42a6b83a8c196c3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5510257041870348872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5510257041870348869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c155dd5f63d67c489f31ce185e73163, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnResourceChange:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ResourceUI, Assembly-CSharp
-        m_MethodName: UpdateUI
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

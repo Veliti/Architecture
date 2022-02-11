@@ -1,5 +1,11 @@
+using UnityEngine;
+
 public class Square : Shape, ISelectable
 {
+    [SerializeField] ResourceSO _resource;
+
+    private readonly int MOVES_ADDED = 1;
+
     void ISelectable.InteractWith(Shape shape)
     {
         if(shape.TryGetComponent<Circle>(out var _) & shape.IsShapeActive)
@@ -9,7 +15,7 @@ public class Square : Shape, ISelectable
                 DisableShape();
                 shape.DisableShape();
                 transform.position = shape.transform.position;
-                MovesResource.ResourceInstance.TryToUseResource();
+                _resource.TryToUseResource(MOVES_ADDED);
             }
         }
     }
