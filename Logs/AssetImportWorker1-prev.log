@@ -9,17 +9,17 @@ C:\Users\Veliti\Desktop\stuff\unity\2020.3.17f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker3
+AssetImportWorker1
 -projectPath
 C:/Users/Veliti/Desktop/stuff/unity/CreobitTest
 -logFile
-Logs/AssetImportWorker3.log
+Logs/AssetImportWorker1.log
 -srvPort
-63804
+49477
 Successfully changed project path to: C:/Users/Veliti/Desktop/stuff/unity/CreobitTest
 C:/Users/Veliti/Desktop/stuff/unity/CreobitTest
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 70.87 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 69.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Users/Veliti/Desktop/stuff/unity/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,5 @@ Initialize mono
 Mono path[0] = 'C:/Users/Veliti/Desktop/stuff/unity/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/Veliti/Desktop/stuff/unity/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/Veliti/Desktop/stuff/unity/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
 Begin MonoManager ReloadAssembly

@@ -1,18 +1,16 @@
-using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 public class ResourceUI : MonoBehaviour
 {
-    [SerializeField] ResourceSO _resource;
-    [SerializeField] string _resourceText;
+    [SerializeField] ResourceManeger _resources;
+    [SerializeField] ResourceTextUI _resourceText;
 
-    private TMP_Text _text;
-
-    public void UpdateUI(int resourceNewValue) => _text.text = _resourceText + resourceNewValue;
-
-    private void Awake() => _text = GetComponent<TMP_Text>();
-
-    private void OnEnable() => _resource.OnResourceChange += UpdateUI;
-    private void OnDisable() => _resource.OnResourceChange -= UpdateUI;
+    private void Start()
+    {
+        foreach (var resource in _resources.ResourcesOnLevel)
+        {
+            var text = Instantiate<ResourceTextUI>(_resourceText, transform);
+            text.Init(resource.Resource);
+        }
+    }
 }

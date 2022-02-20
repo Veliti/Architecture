@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Triangle : Shape, ISelectable
 {
-    [SerializeField] ResourceSO _resource;
+    [SerializeField] Resource _resource;
     [SerializeField] int _sizeDelta = -1;
     [SerializeField] int _energyConsumedOnUse = 1;
 
@@ -10,7 +10,7 @@ public class Triangle : Shape, ISelectable
     {
         if(shape.TryGetComponent<Square>(out var square))
         {
-            if(_resource.TryToUseResource(-_energyConsumedOnUse))
+            if(_resource.TryToRemoveResource(_energyConsumedOnUse))
             {
                 square.ShapeSize += _sizeDelta;
                 Destroy(gameObject);

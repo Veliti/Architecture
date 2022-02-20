@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Square : Shape, ISelectable
 {
-    [SerializeField] ResourceSO _resource;
+    [SerializeField] Resource _resource;
 
     private readonly int MOVES_ADDED = 1;
 
@@ -15,7 +15,7 @@ public class Square : Shape, ISelectable
                 DisableShape();
                 shape.DisableShape();
                 transform.position = shape.transform.position;
-                _resource.TryToUseResource(MOVES_ADDED);
+                _resource.TryToAddResource(MOVES_ADDED);
             }
         }
     }
